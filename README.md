@@ -60,6 +60,16 @@ Ensure your system is running **Ubuntu/Linux** and has Python installed.
 
 # Update system
 `sudo apt update`
+## 🚀 Setup & Running Instructions
+
+Follow these steps to get the **DDoS Detection & Prevention System** up and running on **Ubuntu/Linux**.
+
+---
+
+### **1. Clone the Repository**
+
+git clone <your-repo-url>
+cd DDoS-Detection-Prevention
 
 # Install dependencies
 `sudo apt install python3-pip python3-dev iptables snort -y`
