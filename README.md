@@ -26,33 +26,6 @@ Perfect for **learning, testing, and showcasing** cybersecurity skills on your G
 
 ---
 
-## **Folder Structure**
-
-DDoS-Detection-Prevention/
-│
-├── scripts/ # Python scripts
-│ ├── ddos_detector.py
-│ ├── auto_block.py
-│ └── simulate_attack.py
-│
-├── configs/ # IDS & firewall configs
-│ ├── snort_rules.rules
-│ ├── suricata_rules.yaml
-│ └── firewall_rules.sh
-│
-├── logs/ # Logs for attacks and blocked IPs
-│ ├── attack_logs.txt
-│ └── blocked_ips.txt
-│
-├── docs/ # Documentation & diagrams
-│ └── architecture_diagram.md
-│
-└── README.md
-
-
-
----
-
 ## **Prerequisites**
 
 Ensure your system is running **Ubuntu/Linux** and has Python installed.
