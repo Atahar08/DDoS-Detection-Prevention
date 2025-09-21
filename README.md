@@ -1,5 +1,5 @@
 # 🛡️ DDoS Detection & Prevention System
-
+![DDoS Detection & Prevention System](https://github.com/Atahar08/DDoS-Detection-Prevention/blob/main/docs/ChatGPT%20Image%20Sep%2022%2C%202025%2C%2012_44_53%20AM.png)
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
 ![OS](https://img.shields.io/badge/Linux-Ubuntu-orange)
 ![Status](https://img.shields.io/badge/Status-Ready-green)
