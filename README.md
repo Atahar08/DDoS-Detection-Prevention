@@ -59,65 +59,65 @@ Ensure your system is running **Ubuntu/Linux** and has Python installed.
 
 
 # Update system
-sudo apt update
+`sudo apt update`
 
 # Install dependencies
-sudo apt install python3-pip python3-dev iptables snort -y
+`sudo apt install python3-pip python3-dev iptables snort -y`
 
 # Python packages
-pip install scapy requests
+`pip install scapy requests`
 
 ## 🚀 Setup & Running Instructions
 
-Follow these steps to get the **DDoS Detection & Prevention System** up and running on **Ubuntu/Linux**.
+### 1. Install Dependencies
+
+**System Packages**
+
+`sudo apt update`  
+`sudo apt install python3-pip python3-dev iptables snort -y`
+
+**Python Packages**
+
+`pip install scapy requests`
 
 ---
 
-### **1. Clone the Repository**
-```bash
-git clone <your-repo-url>
-cd DDoS-Detection-Prevention
+### 2. Set Script Permissions
 
-## 🚀 Setup & Running Instructions
+`chmod +x scripts/*.py`  
+`chmod +x configs/firewall_rules.sh`
 
-```bash
-# 2. Install Dependencies
+---
 
-# System Packages
-sudo apt update
-sudo apt install python3-pip python3-dev iptables snort -y
+### 3. Apply Firewall Rules
 
-# Python Packages
-pip install scapy requests
+`sudo bash configs/firewall_rules.sh`  
+✅ This sets up basic iptables rules for traffic filtering and rate limiting.
 
-# 3. Set Script Permissions
-chmod +x scripts/*.py
-chmod +x configs/firewall_rules.sh
+---
 
-# 4. Apply Firewall Rules
-sudo bash configs/firewall_rules.sh
-# ✅ This sets up basic iptables rules for traffic filtering and rate limiting.
+### 4. Run the System
 
-# 5. Run the System
+**a) Start DDoS Detection**
 
-# a) Start DDoS Detection
-python3 scripts/ddos_detector.py
-# 🟢 Monitors network traffic in real-time and logs suspicious IPs.
+`python3 scripts/ddos_detector.py`  
+🟢 Monitors network traffic in real-time and logs suspicious IPs.
 
-# b) Run Automatic IP Blocking
-python3 scripts/auto_block.py
-# 🛑 Reads the detection logs and blocks malicious IPs using iptables.
+**b) Run Automatic IP Blocking**
 
-# c) Optional: Simulate DDoS Traffic (Safe Test)
-python3 scripts/simulate_attack.py
-# 🚨 Sends controlled traffic to test detection and auto-blocking.
+`python3 scripts/auto_block.py`  
+🛑 Reads the detection logs and blocks malicious IPs using iptables.
 
-# 6. Verify Logs
+**c) Optional: Simulate DDoS Traffic (Safe Test)**
 
-# Detected Attacks:
-# /logs/attack_logs.txt
+`python3 scripts/simulate_attack.py`  
+🚨 Sends controlled traffic to test detection and auto-blocking.
 
-# Blocked IPs:
-# /logs/blocked_ips.txt
+---
 
-# Check these files to confirm detection and mitigation.
+### 5. Verify Logs
+
+**Detected Attacks:** `/logs/attack_logs.txt`  
+**Blocked IPs:** `/logs/blocked_ips.txt`  
+
+Check these files to confirm detection and mitigation.
