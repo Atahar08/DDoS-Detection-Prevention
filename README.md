@@ -68,8 +68,8 @@ Follow these steps to get the **DDoS Detection & Prevention System** up and runn
 
 ### **1. Clone the Repository**
 
-git clone <your-repo-url>
-cd DDoS-Detection-Prevention
+`git clone https://github.com/Atahar08/DDoS-Detection-Prevention.git`
+`cd DDoS-Detection-Prevention`
 
 # Install dependencies
 `sudo apt install python3-pip python3-dev iptables snort -y`
