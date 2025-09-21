@@ -57,7 +57,7 @@ DDoS-Detection-Prevention/
 
 Ensure your system is running **Ubuntu/Linux** and has Python installed.
 
-```bash
+
 # Update system
 sudo apt update
 
